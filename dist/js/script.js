@@ -36,9 +36,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	}
 
+	let loopBaner = document.querySelectorAll(".banner__image").length > 1 ? true : false;
+
 	let sliderBanner = new Swiper(".banner__slider-container", {
 		slidesPerView: 1,
 		spaceBetween: 10,
+		loop: loopBaner,
 
 		navigation: {
 			nextEl: ".banner__slider .slider-next",
