@@ -296,6 +296,25 @@ h6 {
 		line-height: 120%;
 		color: #686868;
 	}
+
+	&__err-mess {
+		margin-top: 10px;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 120%;
+		color: #f30000;
+	}
+
+	&.error {
+		& input,
+		& textarea {
+			border-color: #f30000;
+		}
+
+		& .wrap-input__max-symbol {
+			color: #f30000;
+		}
+	}
 }
 
 .from-check {
@@ -403,5 +422,17 @@ h6 {
 			line-height: 120%;
 			color: #393939;
 		}
+	}
+}
+
+@media (max-width: 1170px) {
+	.breadcrumbs {
+		padding: 15px 0;
+	}
+}
+
+@media (max-width: 1000px) {
+	.breadcrumbs {
+		display: none;
 	}
 }

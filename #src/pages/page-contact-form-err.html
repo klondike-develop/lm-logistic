@@ -178,22 +178,33 @@
                                 </div>
 
                                 <div class="from-contact__list">
-                                    <div class="from-contact__item wrap-input">
+                                    <div class="from-contact__item wrap-input error">
                                         <div class="wrap-input__name">Имя</div>
                                         <input type="text" placeholder="Иван Петрович">
+                                        <div class="wrap-input__err-mess">
+                                            Неверный формат имени, имя не должно содержать цифр
+                                        </div>
                                     </div>
 
-                                    <div class="from-contact__item wrap-input">
+                                    <div class="from-contact__item wrap-input error">
                                         <div class="wrap-input__name">Телефон</div>
                                         <input type="tel" placeholder="8 (___) ___-__-__">
+                                        <div class="wrap-input__err-mess">
+                                            Неверный формат номера. Проверьте, что номер начинается с 8 (9__)
+                                        </div>
                                     </div>
 
-                                    <div class="from-contact__item wrap-input">
+                                    <div class="from-contact__item wrap-input error">
                                         <div class="wrap-input__name">Email</div>
                                         <input type="text" placeholder="Example@mail.ru">
+                                        <div class="wrap-input__err-mess">
+                                            Неверный формат почты. Проверьте, что адрес написан в формате
+                                            example@mail.ru
+                                        </div>
                                     </div>
 
-                                    <div class="from-contact__item wrap-input js-max-symbol" data-max-symbol="1000">
+                                    <div class="from-contact__item wrap-input js-max-symbol error"
+                                        data-max-symbol="1000">
                                         <div class="wrap-input__name">Комментарий</div>
                                         <textarea class="js-max-symbol-field"
                                             placeholder="Оставьте вопрос или комментарий"></textarea>

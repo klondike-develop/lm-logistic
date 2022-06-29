@@ -427,6 +427,20 @@ h6 {
   line-height: 120%;
   color: #686868; }
 
+.wrap-input__err-mess {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 120%;
+  color: #f30000; }
+
+.wrap-input.error input,
+.wrap-input.error textarea {
+  border-color: #f30000; }
+
+.wrap-input.error .wrap-input__max-symbol {
+  color: #f30000; }
+
 .from-check {
   position: relative;
   display: block;
@@ -521,6 +535,14 @@ h6 {
       font-weight: 400;
       line-height: 120%;
       color: #393939; }
+
+@media (max-width: 1170px) {
+  .breadcrumbs {
+    padding: 15px 0; } }
+
+@media (max-width: 1000px) {
+  .breadcrumbs {
+    display: none; } }
 
 .header {
   position: fixed;
@@ -1368,7 +1390,7 @@ h6 {
   font-family: "Gotham Pro";
   font-weight: 400;
   font-size: 11px;
-  line-height: 145%;
+  line-height: 150%;
   color: #000000; }
 
 .map-delivery .ymaps-2-1-79-balloon__close-button {
@@ -1539,18 +1561,21 @@ h6 {
   text-align: center; }
 
 .contact__row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px; }
-
-.contact__column:nth-child(1) {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
+  display: flex; }
+
+.contact__column {
+  width: 50%; }
+  .contact__column:nth-child(1) {
+    margin-right: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
 
 .contact__block-address {
   margin-bottom: 16px; }
@@ -1560,7 +1585,38 @@ h6 {
       -ms-flex-positive: 1;
           flex-grow: 1;
   overflow: hidden;
-  border-radius: 32px; }
+  border-radius: 32px;
+  min-height: 300px; }
+  .contact__block-map .ymaps-2-1-79-balloon {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+  .contact__block-map .ymaps-2-1-79-balloon__layout {
+    background: #ffffff;
+    -webkit-box-shadow: 0px 57px 110px rgba(0, 0, 0, 0.03), 0px 28.8563px 47.9531px rgba(0, 0, 0, 0.02025), 0px 11.4px 17.875px rgba(0, 0, 0, 0.015), 0px 2.49375px 6.35938px rgba(0, 0, 0, 0.00975);
+            box-shadow: 0px 57px 110px rgba(0, 0, 0, 0.03), 0px 28.8563px 47.9531px rgba(0, 0, 0, 0.02025), 0px 11.4px 17.875px rgba(0, 0, 0, 0.015), 0px 2.49375px 6.35938px rgba(0, 0, 0, 0.00975);
+    border-radius: 16px; }
+  .contact__block-map .ymaps-2-1-79-balloon__content {
+    padding: 16px; }
+  .contact__block-map .ymaps-2-1-79-balloon_to_top .ymaps-2-1-79-balloon__tail {
+    display: none; }
+  .contact__block-map .map-ballon-title {
+    font-family: "Gotham Pro";
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 154%;
+    color: #000000; }
+  .contact__block-map .map-ballon-text {
+    font-family: "Gotham Pro";
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 145%;
+    color: #000000; }
+    .contact__block-map .map-ballon-text b {
+      display: inline-block;
+      margin: 5px 0; }
+  .contact__block-map .ymaps-2-1-79-balloon__close-button {
+    opacity: 1;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16' fill='none'%3E%3Cpath d='M4.7002 4.7002L11.2999 11.2999' stroke='%23A1A1A1' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.7002 11.2998L11.2999 4.70014' stroke='%23A1A1A1' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"); }
 
 .address-contact {
   padding: 48px;
@@ -1636,7 +1692,18 @@ h6 {
   margin-right: 32px; }
 
 .from-contact {
-  padding: 56px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding: 56px 28px;
   background: #ffffff;
   -webkit-box-shadow: 0px 8.60625px 64.5188px rgba(0, 0, 0, 0.0405), 0px 3.4px 24.05px rgba(0, 0, 0, 0.03), 0px 0.74375px 8.55625px rgba(0, 0, 0, 0.0195);
           box-shadow: 0px 8.60625px 64.5188px rgba(0, 0, 0, 0.0405), 0px 3.4px 24.05px rgba(0, 0, 0, 0.03), 0px 0.74375px 8.55625px rgba(0, 0, 0, 0.0195);
@@ -1657,6 +1724,61 @@ h6 {
     padding: 12px 15px;
     max-width: 100%;
     width: 100%; }
+
+@media (max-width: 1170px) {
+  .contact__wrap {
+    padding: 48px 0 72px 0; }
+  .contact__title {
+    margin-bottom: 40px; }
+  .address-contact {
+    padding: 32px 12px; }
+    .address-contact__top {
+      padding-bottom: 28px;
+      margin-bottom: 28px; }
+    .address-contact__list {
+      grid-template-columns: 1fr; }
+    .address-contact__item:nth-child(1) {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1;
+      grid-column: span 1; }
+    .address-contact__item:nth-child(2) {
+      -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+              order: 3; }
+    .address-contact__item:nth-child(3) {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+  .from-contact {
+    padding: 40px 28px; } }
+
+@media (max-width: 1000px) {
+  .contact__row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .contact__column {
+    width: 100%; }
+    .contact__column:nth-child(1) {
+      margin-right: 0px;
+      margin-bottom: 20px; } }
+
+@media (max-width: 550px) {
+  .contact__block-map {
+    min-height: 240px; }
+    .contact__block-map .map-ballon-text {
+      max-width: 180px; }
+  .address-contact__bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+  .address-contact__text {
+    margin-right: 0;
+    margin-bottom: 24px;
+    text-align: center; } }
 
 .footer {
   border-top: 1px solid #e1e1e1;
