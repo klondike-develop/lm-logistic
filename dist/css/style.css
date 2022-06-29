@@ -987,12 +987,8 @@ h6 {
   .video-warehouse__preview::before {
     width: 64px;
     height: 64px; }
-  .warehouse {
-    overflow: hidden; }
   .gallary-warehouse__image img {
     border-radius: 2px; }
-  .gallary-warehouse .swiper {
-    overflow: initial; }
   .gallary-warehouse .swiper-slide {
     max-width: 150px; }
   .gallary-warehouse .slider-prev,

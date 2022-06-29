@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		arrGallery.forEach((element) => {
 			lightGallery(element, {
 				plugins: [lgVideo],
-				selector: "a",
+				selector: ".lightgallery-item",
 				speed: 500,
 				zoomFromOrigin: false,
 				mobileSettings: {
