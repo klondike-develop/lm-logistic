@@ -283,6 +283,19 @@ h6 {
 			color: #a1a1a1;
 		}
 	}
+
+	& textarea {
+		min-height: 110px;
+	}
+
+	&__max-symbol {
+		margin-top: 10px;
+		text-align: right;
+		font-weight: 400;
+		font-size: 11px;
+		line-height: 120%;
+		color: #686868;
+	}
 }
 
 .from-check {
@@ -348,4 +361,47 @@ h6 {
 
 .lightgallery-item {
 	cursor: pointer;
+}
+
+.breadcrumbs {
+	padding: 30px 0;
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		position: relative;
+		&:not(:last-child) {
+			margin-right: 40px;
+			&::before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: -20px;
+				transform: translate(0, -50%);
+				width: 8px;
+				height: 10px;
+				background: url("../img/icon-arrow-small.svg") no-repeat center / contain;
+			}
+		}
+
+		& a {
+			font-size: var(--fz-body-text-2);
+			font-weight: 400;
+			line-height: 120%;
+			color: #686868;
+			transition: all 0.3s ease;
+			&:hover {
+				color: #000;
+			}
+		}
+
+		& span {
+			font-size: var(--fz-body-text-2);
+			font-weight: 400;
+			line-height: 120%;
+			color: #393939;
+		}
+	}
 }

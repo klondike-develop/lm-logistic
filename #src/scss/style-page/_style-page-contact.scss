@@ -1,0 +1,173 @@
+.contact {
+	&__wrap {
+		padding: 48px 0 96px 0;
+	}
+
+	&__title {
+		margin-bottom: 56px;
+		text-align: center;
+	}
+
+	&__row {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 20px;
+	}
+
+	&__column {
+		&:nth-child(1) {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+
+	&__block-address {
+		margin-bottom: 16px;
+	}
+
+	&__block-map {
+		flex-grow: 1;
+		overflow: hidden;
+		border-radius: 32px;
+	}
+
+	&__form {
+	}
+}
+
+.address-contact {
+	padding: 48px;
+	background: #f4f5f6;
+	border-radius: 32px;
+	&__top {
+		padding-bottom: 32px;
+		margin-bottom: 32px;
+		border-bottom: 1px solid #e1e1e1;
+	}
+
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		column-gap: 20px;
+		row-gap: 24px;
+	}
+
+	&__item {
+		&:nth-child(1) {
+			grid-column: span 2;
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__text {
+		margin-right: 20px;
+		max-width: 230px;
+		font-weight: 400;
+		font-size: var(--fz-body-text-2);
+		line-height: 154%;
+		color: #000000;
+	}
+
+	&__social {
+	}
+}
+
+.address-item {
+	display: flex;
+
+	&__icon {
+		margin-right: 20px;
+		flex-shrink: 0;
+	}
+
+	&__group {
+	}
+
+	&__name {
+		margin-bottom: 8px;
+	}
+
+	&__list {
+	}
+
+	&__item {
+		font-weight: 400;
+		font-size: var(--fz-body-text-2);
+		line-height: 154%;
+		color: #000000;
+
+		& a {
+			color: #000000;
+			transition: all 0.3s ease;
+			&:hover {
+				color: #83c150;
+			}
+		}
+
+		& span {
+			color: #686868;
+		}
+
+		&:not(:last-child) {
+			margin-bottom: 4px;
+		}
+	}
+}
+
+.address-social {
+	&__list {
+		display: flex;
+		align-items: center;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-right: 32px;
+		}
+	}
+
+	&__icon {
+	}
+}
+
+.from-contact {
+	padding: 56px 10px;
+	background: #ffffff;
+	box-shadow: 0px 8.60625px 64.5188px rgba(0, 0, 0, 0.0405), 0px 3.4px 24.05px rgba(0, 0, 0, 0.03), 0px 0.74375px 8.55625px rgba(0, 0, 0, 0.0195);
+	border-radius: 32px;
+
+	&__wrap {
+		max-width: 442px;
+		margin: 0 auto;
+	}
+
+	&__title {
+		margin-bottom: 32px;
+		text-align: center;
+	}
+
+	&__list {
+		margin-bottom: 32px;
+	}
+
+	&__item {
+		&:not(:last-child) {
+			margin-bottom: 28px;
+		}
+	}
+
+	&__check {
+		margin-bottom: 20px;
+	}
+
+	&__btn {
+		padding: 12px 15px;
+		max-width: 100%;
+		width: 100%;
+	}
+}

@@ -48,6 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		pagination: {
 			el: ".banner__slider .swiper-pagination",
 			type: "bullets",
+			clickable: true,
 		},
 
 		on: {
@@ -117,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		pagination: {
 			el: ".working-us__slider .swiper-pagination",
 			type: "bullets",
+			clickable: true,
 		},
 
 		breakpoints: {
@@ -177,6 +179,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		pagination: {
 			el: ".cooperation__slider .swiper-pagination",
 			type: "bullets",
+			clickable: true,
 		},
 	});
 
@@ -240,4 +243,28 @@ document.addEventListener("DOMContentLoaded", function () {
 			},
 		},
 	}).mask('[type="tel"]');
+
+	let arrMaxSymbol = document.querySelectorAll(".js-max-symbol");
+
+	if (arrMaxSymbol.length > 0) {
+		arrMaxSymbol.forEach((element) => {
+			let maxSize = element.getAttribute("data-max-symbol");
+			let inputField = element.querySelector(".js-max-symbol-field");
+			let valueField = element.querySelector(".js-max-symbol-value");
+
+			function limitText() {
+				if (parseInt(this.value.length) >= parseInt(maxSize)) {
+					inputField.value = inputField.value.substring(0, parseInt(maxSize));
+					valueField.textContent = parseInt(maxSize);
+				} else {
+					valueField.textContent = this.value.length;
+				}
+			}
+
+			if (inputField !== null) {
+				inputField.addEventListener("keyup", limitText);
+				inputField.addEventListener("change", limitText);
+			}
+		});
+	}
 });
