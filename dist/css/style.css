@@ -468,6 +468,9 @@ h6 {
   .from-check__text {
     color: #a1a1a1; } }
 
+.lightgallery-item {
+  cursor: pointer; }
+
 .header {
   position: fixed;
   width: 100%;

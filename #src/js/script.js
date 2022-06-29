@@ -231,4 +231,13 @@ document.addEventListener("DOMContentLoaded", function () {
 			});
 		});
 	}
+
+	Inputmask({
+		mask: "8 (Z99) 999-99-99",
+		definitions: {
+			Z: {
+				validator: "[0-6,9]",
+			},
+		},
+	}).mask('[type="tel"]');
 });
