@@ -49,6 +49,8 @@ body.lock {
 .wrapper {
 	width: 100%;
 	min-height: 100%;
+	display: flex;
+	flex-direction: column;
 }
 
 .container {
@@ -58,6 +60,7 @@ body.lock {
 }
 
 .main {
+	flex-grow: 1;
 	padding-top: 100px;
 }
 
