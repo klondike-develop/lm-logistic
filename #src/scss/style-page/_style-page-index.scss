@@ -447,7 +447,7 @@
 	}
 
 	.warehouse {
-		// overflow: hidden;
+		overflow: hidden;
 	}
 
 	.gallary-warehouse {
@@ -458,7 +458,7 @@
 		}
 
 		& .swiper {
-			// overflow: initial;
+			overflow: initial;
 		}
 
 		& .swiper-slide {
@@ -785,6 +785,7 @@
 	.tab-price {
 		&__btn {
 			max-width: initial;
+			min-width: initial;
 			width: auto;
 			padding: 16px 24px;
 			&:not(:last-child) {

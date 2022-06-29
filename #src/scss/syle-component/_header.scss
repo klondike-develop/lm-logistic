@@ -188,6 +188,14 @@
 	}
 }
 
+@media (max-height: 500px) {
+	.mobile-menu {
+		&__group {
+			max-height: calc(100vh - 160px);
+		}
+	}
+}
+
 @media (max-width: 1170px) {
 	.header {
 		&__wrap {

@@ -626,6 +626,10 @@ h6 {
     overflow-y: auto;
     max-height: calc(100vh - 115px); }
 
+@media (max-height: 500px) {
+  .mobile-menu__group {
+    max-height: calc(100vh - 160px); } }
+
 @media (max-width: 1170px) {
   .header__wrap {
     padding: 13px 0 13px 0; }
@@ -987,8 +991,12 @@ h6 {
   .video-warehouse__preview::before {
     width: 64px;
     height: 64px; }
+  .warehouse {
+    overflow: hidden; }
   .gallary-warehouse__image img {
     border-radius: 2px; }
+  .gallary-warehouse .swiper {
+    overflow: initial; }
   .gallary-warehouse .swiper-slide {
     max-width: 150px; }
   .gallary-warehouse .slider-prev,
@@ -1198,6 +1206,7 @@ h6 {
 @media (max-width: 768px) {
   .tab-price__btn {
     max-width: initial;
+    min-width: initial;
     width: auto;
     padding: 16px 24px; }
     .tab-price__btn:not(:last-child) {
