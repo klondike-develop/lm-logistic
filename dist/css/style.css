@@ -1523,6 +1523,8 @@ h6 {
 
 .order-work {
   background: #f4f5f6; }
+  .order-work.--white {
+    background: #fff; }
   .order-work__wrap {
     padding: 64px 0 96px 0; }
   .order-work__subtitle {
@@ -1887,6 +1889,94 @@ h6 {
   .card-question__name {
     font-size: 13px;
     margin-right: 12px; } }
+
+.page-sevrice__wrap {
+  padding: 48px 0 64px 0; }
+
+.page-sevrice__title {
+  margin-bottom: 44px;
+  text-align: center; }
+
+.page-sevrice__item:not(:last-child) {
+  margin-bottom: 76px; }
+
+.item-service {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 25px; }
+  .item-service.--reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse; }
+    .item-service.--reverse .item-service__group {
+      margin-left: 20px;
+      margin-right: 0; }
+  .item-service::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 30px);
+    background: #f4f5f6;
+    border-radius: 32px;
+    z-index: 1; }
+  .item-service__group {
+    position: relative;
+    margin-right: 20px;
+    padding: 70px 0;
+    max-width: 443px;
+    z-index: 2; }
+  .item-service__title {
+    margin-bottom: 24px; }
+  .item-service__text {
+    font-weight: 400;
+    font-size: var(--fz-body-text-2);
+    line-height: 154%;
+    color: #000000; }
+  .item-service__image {
+    position: relative;
+    z-index: 2; }
+
+@media (max-width: 1170px) {
+  .page-sevrice__wrap {
+    padding: 48px 0 36px 0; }
+  .page-sevrice__item:not(:last-child) {
+    margin-bottom: 30px; } }
+
+@media (max-width: 768px) {
+  .page-sevrice__title {
+    margin-bottom: 15px; }
+  .item-service {
+    padding: 0 16px 32px 16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse; }
+    .item-service::before {
+      height: calc(100% - 50px); }
+    .item-service.--reverse {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+          -ms-flex-direction: column-reverse;
+              flex-direction: column-reverse; }
+      .item-service.--reverse .item-service__group {
+        margin-left: 0;
+        margin-right: 0; }
+    .item-service__title {
+      margin-bottom: 16px; }
+    .item-service__group {
+      padding: 0;
+      margin-right: 0; } }
 
 .footer {
   border-top: 1px solid #e1e1e1;
