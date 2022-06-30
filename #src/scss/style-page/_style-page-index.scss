@@ -668,6 +668,24 @@
 
 	&__tab {
 	}
+
+	&.--white {
+		background: #fff;
+
+		.price__wrap {
+			padding: 48px 0 96px 0;
+		}
+
+		& .tab-price__btn {
+			&:not(:hover):not(:active):not(.active) {
+				background: #f4f5f6;
+			}
+		}
+
+		& .table-price {
+			background: #f4f5f6;
+		}
+	}
 }
 
 .tab-price {
@@ -770,6 +788,12 @@
 
 		&__title {
 			margin-bottom: 40px;
+		}
+
+		&.--white {
+			.price__wrap {
+				padding: 48px 0 72px 0;
+			}
 		}
 	}
 
