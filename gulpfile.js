@@ -1,5 +1,5 @@
 const gulp = require("gulp");
-const sass = require("gulp-sass");
+const sass = require('gulp-sass')(require('sass'));
 const borwsersync = require("browser-sync");
 const del = require("del");
 const include = require("gulp-file-include");
@@ -64,14 +64,14 @@ gulp.task("font", function () {
 gulp.task("img", function () {
 	return gulp
 		.src("#src/img/**/*")
-		.pipe(
-			imagemin({
-				interlaced: true,
-				progressive: true,
-				svgoPlugins: [{ removeViewBox: false }],
-				use: [pngquant()],
-			})
-		)
+		// .pipe(
+		// 	imagemin({
+		// 		interlaced: true,
+		// 		progressive: true,
+		// 		svgoPlugins: [{ removeViewBox: false }],
+		// 		use: [pngquant()],
+		// 	})
+		// )
 		.pipe(gulp.dest("dist/img"));
 });
 

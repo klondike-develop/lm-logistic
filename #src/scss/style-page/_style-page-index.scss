@@ -207,7 +207,7 @@
 
 	.slider-prev,
 	.slider-next {
-		top: calc(50% - 25px);
+		top: calc(50% - 28px);
 	}
 }
 
@@ -888,9 +888,9 @@
 		margin-bottom: 16px;
 	}
 
-	&__text {
-		margin-bottom: 28px;
-	}
+	// &__text {
+	// 	margin-bottom: 28px;
+	// }
 
 	&__image {
 		text-align: center;
